@@ -34,7 +34,7 @@ export default function URLShortener() {
             );
 
             setShortUrl(response.data.link);
-        } catch (err) {
+        } catch {
             setError("Failed to shorten the URL. Please try again.")
         }
     };
